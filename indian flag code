@@ -1,0 +1,51 @@
+import turtle
+
+_s = turtle.Screen()
+
+
+flag = turtle.Turtle()
+flag.speed(100)
+flag.width(100)
+flag.color("#ff6600")
+_s.bgcolor("#00cccc")
+for i in range(1):
+  flag.penup()
+  flag.goto(-400,100)
+  flag.pendown()
+  flag.forward(800)
+flag.color("#ffffff")
+for i in range(1):
+  flag.penup()
+  flag.goto(-400,0)
+  flag.pendown()
+  flag.forward(800)
+flag.color("#33cc00")
+for i in range(1):
+  flag.penup()
+  flag.goto(-400,-100)
+  flag.pendown()
+  flag.forward(800)
+for i in range(1):
+  flag.penup()
+  flag.goto(0,0)
+  flag.pendown()
+flag.color("#3333ff")
+flag.dot(50)
+flag.color("#ffffff")
+flag.dot(40)
+flag.width(5)
+for i in range(3):
+  flag.forward(3)
+  flag.backward(3)
+  flag.forward(3)
+  flag.right(3)
+flag.penup()
+flag.goto(200,300)
+lines = turtle.Turtle()
+lines.width(3)
+lines.color("#3366ff")
+lines.pendown()
+for count in range(24):
+  lines.forward(40)
+  lines.backward(40)
+  lines.right(15)
